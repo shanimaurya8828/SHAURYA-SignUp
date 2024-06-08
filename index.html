@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="shaurya.jpeg">
+</head>
+<body class="light-theme">
+    <header>
+        <nav>  
+          <ul>
+            <li>
+              <label class="switch">
+                <i class="fas fa-adjust"></i>
+                <div>
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </div>
+              </label>
+            </li>
+          </ul>
+        </nav>
+    </header>
+    <main>
+    <form action="/action_page.php" onsubmit="">
+        <h2 align="center">SignUp Form</h2>
+        <br><br>
+        <div class="a">
+        <label for="Username">Name:</label>
+        <input type="text" id="Username" name="username" placeholder="Enter your name" minlength="5" size="20" pattern="[a-zA-Z ]*" required>
+        <div class="rq">*must not contain any numerical values and must be of minimum length 5.</div>
+        </div>
+        <br>
+        <div class="a">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="abc@gmail.com" pattern="^[a-zA-Z0-9]+@gmail\.[a-zA-z]+$" size="35">
+        <div class="rq">*only gmail id.</div>
+        </div>
+        <br>
+        <div class="a">
+            <label for="password">Password:</label> 
+            <input type="password" id="password" name="password" minlength="8" size="20" required>
+            <div class="rq">*minimum length should be 8.</div>
+        </div>
+        <br>
+        <div class="a">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" size="10" required>
+        </div>
+        <br>
+        <div class="a">
+            <label for="name">Select your Gender:</label>
+            <br>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="abc" name="gender" value="abc">
+            <label for="abc">Rather not to say</label>
+        </div>
+        <br>
+        <div class="a">
+            <label for="sport">You are interested in:</label>
+            <select name="sport">
+                <option value="Athletics">Athletics</option>
+                <option value="Badminton">Badminton</option>
+                <option value="Basketball">Basketball</option>
+                <option value="Chess">Chess</option>
+                <option value="Cricket">Cricket</option>
+                <option value="Football">Football</option>
+                <option value="Hockey">Hockey</option>
+                <option value="Powerlifting">Powerlifting</option>
+                <option value="Squash">Squash</option>
+                <option value="Table Tennis">Table Tennis</option>
+                <option value="Tennis">Tennis</option>
+                <option value="Volleyball">Volleyball</option>
+                <option value="Weightlifting">Weightlifting</option>
+            </select>
+        </div>
+        <br>
+        <div align="center">
+            <input type="submit" value="SignUp">
+        </div>
+    </form>
+</main>
+    <script src="theme.js"></script>
+</body>
+</html>
